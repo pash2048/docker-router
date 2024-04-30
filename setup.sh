@@ -5,6 +5,7 @@ set -e
 
 ## Replace DST_SERVER_IP and DST_SERVER_PORT with actual value
 # DST_SERVER_IP="2.2.2.2"
+apt-get -y update; apt-get -y install curl
 DST_SERVER_IP=$(curl "echoip.ir")
 DST_SERVER_PORT="22222"
 
